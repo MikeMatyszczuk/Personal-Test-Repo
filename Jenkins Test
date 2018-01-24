@@ -1,0 +1,91 @@
+#!groovy​
+
+// TODO: Controls how many builds are kept in Jenkins. Adjust to taste.
+properties([[$class: 'BuildDiscarderProperty', strategy: [$class: 'LogRotator', numToKeepStr: '10']]])
+
+
+timestamps {
+
+  node('ondemand') {
+
+    env.NODEJS_HOME = "${tool 'Node7_8_0'}"
+    env.PATH="${env.PATH}:${env.NODEJS_HOME}/bin"
+
+    stage('Setup') {
+      sh "rm -rf reports/"
+
+      checkout scm
+
+      // This captures the commit message for the commit that triggered the build for use in build notification messages.
+      env.CHANGELOG = sh(
+            script: "git log -1 --no-decorate --format=short HEAD",
+            returnStdout: true
+      ).trim()
+
+      sh "npm install"
+    // Send a notification that the build has started
+    // announce('good', "Acceptance Tests Started #jobInfo#\n${env.CHANGELOG}")
+
+    }
+    stage('Tests') {
+      try {
+        sh "newman run api-tests/apis/authentication/${params.auth_type}.json -g api-tests/globals/globals.postman_globals.json -e api-tests/environments/${params.environment}.json --export-environment ${params.environment}-updated.json -k -x"
+        sh "newman run api-tests/apis/v1-Employer.postman_collection.json -g api-tests/globals/globals.postman_globals.json -e ${params.environment}-updated.json --reporters cli,html,junit  --reporter-junit-export reports/v1Employer.xml --reporter-html-export reports/v1Employer.html -k -x"
+        sh "newman run api-tests/apis/v2-Employer.postman_collection.json -g api-tests/globals/globals.postman_globals.json -e ${params.environment}-updated.json --reporters cli,html,junit  --reporter-junit-export reports/v2Employer.xml --reporter-html-export reports/v2Employer.html -k -x"
+        //sh "newman run api-tests/apis/v2-Worker.postman_collection.json -g api-tests/globals/globals.postman_globals.json -e api-tests/environments/${params.environment}.json --reporters cli,html,junit  --reporter-junit-export reports/v2Worker.xml --reporter-html-export reports/v2Worker.html -k"
+        //NYT-STAGING and API-DEV currently have issues, so exclude them from v2Worker tests.
+        //NYT-STAGING issue tracked by https://workmarket.atlassian.net/browse/APP-26703
+        //API-DEV issue = create assignment randomly flickers between draft and sent
+        if (params.environment == "api-gw" || params.environment =="dev" ) {
+          sh "newman run api-tests/apis/v2-Worker.postman_collection.json -g api-tests/globals/globals.postman_globals.json -e ${params.environment}-updated.json --reporters cli,html,junit  --reporter-junit-export reports/v2Worker.xml --reporter-html-export reports/v2Worker.html -k -x"
+        }
+      }
+      finally {
+
+        junit 'reports/*.xml'
+        publishHTML (target: [
+                allowMissing: false,
+                alwaysLinkToLastBuild: false,
+                keepAll: true,
+                reportDir: 'reports',
+                reportFiles: '*.html',
+                reportName: "Postman Results"
+        ])
+
+      }
+    }
+
+  }
+
+}
+
+
+// Sends a notification from the build
+// Intended to abstract the type(s) of notifications from the rest of the build.
+// Currently sends to Slack.
+// Will replace certain tokens in the mesg with expanded info:
+//    #jobInfo#
+//    #jobInfoLine#
+//    #testInfo#
+//    #buildStatus#
+// TODO: Refactor so color isn't sent, but rather an abstract status.
+// TODO: We can't specifically notify specific users yet until
+//       https://github.com/jenkinsci/slack-plugin/pull/178  is integrated with the
+//       slack-plugin to look up slack ids from email addresses (which are in the commits).
+//       Alternatively, our own lookup system could be created, although that would
+//       require maintenance.
+def announce(color, mesg) {
+  def jobInfo = "${env.JOB_NAME} <${env.BUILD_URL}|#${env.BUILD_NUMBER}> (<${env.BUILD_URL}console|console>)"
+  mesg = mesg.replaceAll('#jobInfo#', jobInfo)
+
+  def jobInfoLine = "\n » " + jobInfo
+  mesg = mesg.replaceAll('#jobInfoLine#', jobInfoLine)
+
+  def testInfo = "\n » ${env.JOB_NAME} <${env.BUILD_URL}|#${env.BUILD_NUMBER}> (<${env.BUILD_URL}testReport|test report>)"
+  mesg = mesg.replaceAll('#testInfo#', testInfo)
+
+  def buildStatus = currentBuild.result == null ? "SUCCESS" : currentBuild.result
+  mesg = mesg.replaceAll('#buildStatus#', buildStatus)
+
+  slackSend color: color, message: mesg
+}
