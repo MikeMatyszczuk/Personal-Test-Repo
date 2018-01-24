@@ -1,0 +1,584 @@
+ 001.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "Account Register / Hold Funds"                
+                                                                           
+ 002.  AssertionEr…  expected undefined to be truthy                       
+                     at assertion:2 in test-script                         
+                     inside "Account Register / Hold Funds"                
+                                                                           
+ 003.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "Account Register / Settle Hold"               
+                                                                           
+ 004.  AssertionEr…  expected undefined to be truthy                       
+                     at assertion:2 in test-script                         
+                     inside "Account Register / Settle Hold"               
+                                                                           
+ 005.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "Account Register / Create Invoices"           
+                                                                           
+ 006.  AssertionEr…  expected undefined to be truthy                       
+                     at assertion:2 in test-script                         
+                     inside "Account Register / Create Invoices"           
+                                                                           
+ 007.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "Account Register / Pay Invoices"              
+                                                                           
+ 008.  AssertionEr…  expected undefined to be truthy                       
+                     at assertion:2 in test-script                         
+                     inside "Account Register / Pay Invoices"              
+                                                                           
+ 009.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get documents"                     
+                                                                           
+ 010.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get labels"                        
+                                                                           
+ 011.  TypeError     Cannot read property 'id' of undefined                
+                     at test-script                                        
+                     inside "employer / Get labels"                        
+                                                                           
+ 012.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get payment configuration"         
+                                                                           
+ 013.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / List projects"                     
+                                                                           
+ 014.  TypeError     Cannot read property 'id' of undefined                
+                     at test-script                                        
+                     inside "employer / List projects"                     
+                                                                           
+ 015.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / [Test] Add Project"                
+                                                                           
+ 016.  AssertionEr…  expected false to be truthy                           
+                     at assertion:1 in test-script                         
+                     inside "employer / [Test] Add Project"                
+                                                                           
+ 017.  AssertionEr…  expected false to be truthy                           
+                     at assertion:2 in test-script                         
+                     inside "employer / [Test] Add Project"                
+                                                                           
+ 018.  TypeError     Cannot read property 'id' of undefined                
+                     at test-script                                        
+                     inside "employer / [Test] Add Project"                
+                                                                           
+ 019.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / List requirement sets"             
+                                                                           
+ 020.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / List assignment templates"         
+                                                                           
+ 021.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Update an assignment template"     
+                                                                           
+ 022.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get followers of your company"     
+                                                                           
+ 023.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / List payment terms options"        
+                                                                           
+ 024.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / List surveys"                      
+                                                                           
+ 025.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / List custom field groups"          
+                                                                           
+ 026.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get default assignment settings"   
+                                                                           
+ 027.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Update default assignment          
+                     settings"                                             
+                                                                           
+ 028.  TypeError     Cannot read property 'printSettingsSignature' of      
+                     undefined                                             
+                     at test-script                                        
+                     inside "employer / Update default assignment          
+                     settings"                                             
+                                                                           
+ 029.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Create a new assignment template"  
+                                                                           
+ 030.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get an assignment template"        
+                                                                           
+ 031.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Validate a draft assignment"       
+                                                                           
+ 032.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / [Test] Fail to validate a draft    
+                     assignment"                                           
+                                                                           
+ 033.  TypeError     Cannot read property 'length' of undefined            
+                     at test-script                                        
+                     inside "employer / [Test] Fail to validate a draft    
+                     assignment"                                           
+                                                                           
+ 034.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Create a draft assignment"         
+                                                                           
+ 035.  TypeError     Cannot read property 'title' of undefined             
+                     at test-script                                        
+                     inside "employer / Create a draft assignment"         
+                                                                           
+ 036.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get draft assignment configuration 
+                     details"                                              
+                                                                           
+ 037.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get assignment draft details"      
+                                                                           
+ 038.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Validate a new assignment"         
+                                                                           
+ 039.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Create a new assignment"           
+                                                                           
+ 040.  TypeError     Cannot read property 'title' of undefined             
+                     at test-script                                        
+                     inside "employer / Create a new assignment"           
+                                                                           
+ 041.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get assignment details"            
+                                                                           
+ 042.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get an assignment's configuration  
+                     details"                                              
+                                                                           
+ 043.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Create/update assignment           
+                     configuration details"                                
+                                                                           
+ 044.  TypeError     Cannot read property 'printSettingsSignature' of      
+                     undefined                                             
+                     at test-script                                        
+                     inside "employer / Create/update assignment           
+                     configuration details"                                
+                                                                           
+ 045.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get assignment custom field        
+                     groups"                                               
+                                                                           
+ 046.  TypeError     Cannot read property 'id' of undefined                
+                     at test-script                                        
+                     inside "employer / Get assignment custom field        
+                     groups"                                               
+                                                                           
+ 047.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Create/update assignment custom    
+                     field groups"                                         
+                                                                           
+ 048.  TypeError     Cannot read property 'fields' of undefined            
+                     at test-script                                        
+                     inside "employer / Create/update assignment custom    
+                     field groups"                                         
+                                                                           
+ 049.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get the deliverables associated    
+                     with this assignment"                                 
+                                                                           
+ 050.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Update the deliverables associated 
+                     with this assignment"                                 
+                                                                           
+ 051.  TypeError     Cannot read property 'instructions' of undefined      
+                     at test-script                                        
+                     inside "employer / Update the deliverables associated 
+                     with this assignment"                                 
+                                                                           
+ 052.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get the documents associated with  
+                     this assignment "                                     
+                                                                           
+ 053.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Create/update the documents        
+                     associated with this assignment"                      
+                                                                           
+ 054.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get assignment location details"   
+                                                                           
+ 055.  TypeError     Cannot read property 'addressLine1' of undefined      
+                     at test-script                                        
+                     inside "employer / Get assignment location details"   
+                                                                           
+ 056.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Update assignment location         
+                     details"                                              
+                                                                           
+ 057.  TypeError     Cannot read property 'addressLine2' of undefined      
+                     at test-script                                        
+                     inside "employer / Update assignment location         
+                     details"                                              
+                                                                           
+ 058.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get assignment pricing details"    
+                                                                           
+ 059.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Update assignment pricing details" 
+                                                                           
+ 060.  TypeError     Cannot read property 'perHourPrice' of undefined      
+                     at test-script                                        
+                     inside "employer / Update assignment pricing details" 
+                                                                           
+ 061.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get assignment routing details"    
+                                                                           
+ 062.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Update assignment routing details" 
+                                                                           
+ 063.  TypeError     Cannot read property 'printSettingsSignature' of      
+                     undefined                                             
+                     at test-script                                        
+                     inside "employer / Update assignment routing details" 
+                                                                           
+ 064.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get an assignment schedule"        
+                                                                           
+ 065.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get assignment shipments"          
+                                                                           
+ 066.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Create/update assignment surveys"  
+                                                                           
+ 067.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get assignment surveys"            
+                                                                           
+ 068.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Update an assignment's             
+                     configuration details"                                
+                                                                           
+ 069.  TypeError     Cannot read property 'printSettingsSignature' of      
+                     undefined                                             
+                     at test-script                                        
+                     inside "employer / Update an assignment's             
+                     configuration details"                                
+                                                                           
+ 070.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get an assignment's custom field   
+                     groups"                                               
+                                                                           
+ 071.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Update an assignment's custom      
+                     field groups"                                         
+                                                                           
+ 072.  TypeError     Cannot read property 'fields' of undefined            
+                     at test-script                                        
+                     inside "employer / Update an assignment's custom      
+                     field groups"                                         
+                                                                           
+ 073.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get an assignment's deliverables"  
+                                                                           
+ 074.  TypeError     Cannot read property 'id' of undefined                
+                     at test-script                                        
+                     inside "employer / Get an assignment's deliverables"  
+                                                                           
+ 075.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Update an assignment's             
+                     deliverables"                                         
+                                                                           
+ 076.  TypeError     Cannot read property 'instructions' of undefined      
+                     at test-script                                        
+                     inside "employer / Update an assignment's             
+                     deliverables"                                         
+                                                                           
+ 077.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get an assignment's documents"     
+                                                                           
+ 078.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Update an assignment's documents"  
+                                                                           
+ 079.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get an assignment's location       
+                     details"                                              
+                                                                           
+ 080.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Update an assignment's location    
+                     details"                                              
+                                                                           
+ 081.  TypeError     Cannot read property 'addressLine2' of undefined      
+                     at test-script                                        
+                     inside "employer / Update an assignment's location    
+                     details"                                              
+                                                                           
+ 082.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get an assignment's pricing        
+                     details"                                              
+                                                                           
+ 083.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Update an assignment's pricing     
+                     details"                                              
+                                                                           
+ 084.  TypeError     Cannot read property 'perHourPrice' of undefined      
+                     at test-script                                        
+                     inside "employer / Update an assignment's pricing     
+                     details"                                              
+                                                                           
+ 085.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get an assignment's routing        
+                     details"                                              
+                                                                           
+ 086.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Update an assignment's routing     
+                     details"                                              
+                                                                           
+ 087.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get an assignment's schedule"      
+                                                                           
+ 088.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Update an assignment's schedule"   
+                                                                           
+ 089.  TypeError     Cannot read property 'checkinContactName' of          
+                     undefined                                             
+                     at test-script                                        
+                     inside "employer / Update an assignment's schedule"   
+                                                                           
+ 090.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get an assignment's shipments"     
+                                                                           
+ 091.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / List Surveys"                      
+                                                                           
+ 092.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Update an assignment's surveys"    
+                                                                           
+ 093.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get an assignment's surveys"       
+                                                                           
+ 094.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get client companies with the      
+                     given fields"                                         
+                                                                           
+ 095.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get projects for the given client  
+                     company"                                              
+                                                                           
+ 096.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / List worker filters"               
+                                                                           
+ 097.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Search workers"                    
+                                                                           
+ 098.  AssertionEr…  expected false to be truthy                           
+                     at assertion:1 in test-script                         
+                     inside "employer / Search workers"                    
+                                                                           
+ 099.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Fetch Worker Profiles"             
+                                                                           
+ 100.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get profile completeness"          
+                                                                           
+ 101.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / List admins"                       
+                                                                           
+ 102.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get company profile"               
+                                                                           
+ 103.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Save company profile"              
+                                                                           
+ 104.  TypeError     Cannot read property 'printSettingsSignature' of      
+                     undefined                                             
+                     at test-script                                        
+                     inside "employer / Save company profile"              
+                                                                           
+ 105.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get company profile"               
+                                                                           
+ 106.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / List company workers"              
+                                                                           
+ 107.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Save tax info"                     
+                                                                           
+ 108.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / List countries"                    
+                                                                           
+ 109.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get a list of client locations"    
+                                                                           
+ 110.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / [Test] - Validate assignment       
+                     details"                                              
+                                                                           
+ 111.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / Get an assignment by id"           
+                                                                           
+ 112.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "employer / View Workers"                      
+                                                                           
+ 113.  AssertionEr…  expected false to be truthy                           
+                     at assertion:1 in test-script                         
+                     inside "employer / View Workers"                      
+                                                                           
+ 114.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "v2 randoms / Accept work on behalf of the     
+                     given worker"                                         
+                                                                           
+ 115.  AssertionEr…  expected false to be truthy                           
+                     at assertion:1 in test-script                         
+                     inside "v2 randoms / Accept work on behalf of the     
+                     given worker"                                         
+                                                                           
+ 116.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "v2 randoms / Update multiple custom fields"   
+                                                                           
+ 117.  AssertionEr…  expected false to be truthy                           
+                     at assertion:1 in test-script                         
+                     inside "v2 randoms / Update multiple custom fields"   
+                                                                           
+ 118.  AssertionEr…  expected false to be truthy                           
+                     at assertion:2 in test-script                         
+                     inside "v2 randoms / Update multiple custom fields"   
+                                                                           
+ 119.  TypeError     Cannot read property 'data' of undefined              
+                     at test-script                                        
+                     inside "v2 randoms / Update multiple custom fields"   
+                                                                           
+ 120.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "v2 randoms / Update a custom field group's    
+                     custom fields by position"                            
+                                                                           
+ 121.  AssertionEr…  expected false to be truthy                           
+                     at assertion:1 in test-script                         
+                     inside "v2 randoms / Update a custom field group's    
+                     custom fields by position"                            
+                                                                           
+ 122.  AssertionEr…  expected false to be truthy                           
+                     at assertion:2 in test-script                         
+                     inside "v2 randoms / Update a custom field group's    
+                     custom fields by position"                            
+                                                                           
+ 123.  TypeError     Cannot read property 'data' of undefined              
+                     at test-script                                        
+                     inside "v2 randoms / Update a custom field group's    
+                     custom fields by position"                            
+                                                                           
+ 124.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "v2 randoms / Update custom fields"            
+                                                                           
+ 125.  AssertionEr…  expected false to be truthy                           
+                     at assertion:1 in test-script                         
+                     inside "v2 randoms / Update custom fields"            
+                                                                           
+ 126.  AssertionEr…  expected false to be truthy                           
+                     at assertion:2 in test-script                         
+                     inside "v2 randoms / Update custom fields"            
+                                                                           
+ 127.  TypeError     Cannot read property 'data' of undefined              
+                     at test-script                                        
+                     inside "v2 randoms / Update custom fields"            
+                                                                           
+ 128.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "v2 randoms / Search for workers"              
+                                                                           
+ 129.  AssertionEr…  expected false to be truthy                           
+                     at assertion:1 in test-script                         
+                     inside "v2 randoms / Search for workers"              
+                                                                           
+ 130.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "v2 randoms / List Assignments"                
+                                                                           
+ 131.  AssertionEr…  expected false to be truthy                           
+                     at assertion:1 in test-script                         
+                     inside "v2 randoms / List Assignments"                
+                                                                           
+ 132.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "v2 randoms / Search Assignments"              
+                                                                           
+ 133.  AssertionEr…  expected false to be truthy                           
+                     at assertion:0 in test-script                         
+                     inside "Create and route new assignment"              
+                                                                           
+ 134.  TypeError     Cannot read property 'title' of undefined             
+                     at test-script                                        
+                     inside "Create and route new assignment" 
